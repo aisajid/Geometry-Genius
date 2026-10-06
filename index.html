@@ -32,7 +32,7 @@
             <!-- shape card container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols2 lg:grid-cols-3 gap-6">
                 <!-- Triangle card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-96 bg-base-100 shadow-xl" id="triangle-div">
                     <figure  class="mt-5"><img src="images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
                         <h2 class="text-2xl font-bold text-[#414141] text-center mb-3">Triangle</h2>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <!-- Rectangle card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-96 bg-base-100 shadow-xl" id="rectangle-div">
                     <figure class="mt-5"><img src="images/rectangle.png" alt="rectangle" /></figure>
                     <div class="card-body">
                         <h2 class="text-2xl font-bold text-[#414141] text-center mb-3"> Rectangle</h2>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <!-- Parallelogram card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-96 bg-base-100 shadow-xl" id="parallelogram-div">
                     <figure class="mt-5"><img src="images/parallelogram.png" alt="rectangle" /></figure>
                     <div class="card-body">
                         <h2 class="text-2xl font-bold text-[#414141] text-center mb-3">Parallelogram</h2>
@@ -94,10 +94,10 @@
                     </div>
                 </div>
                 <!-- Rhombus card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-96 bg-base-100 shadow-xl" id="rhombus-div">
                     <figure class="mt-5"><img src="images/rhombus.png" alt="rhombus" /></figure>
                     <div class="card-body">
-                        <h2 class="text-2xl font-bold text-[#414141] text-center mb-3">Parallelogram</h2>
+                        <h2 class="text-2xl font-bold text-[#414141] text-center mb-3">Rhombus</h2>
                         <p class="text-center text-[#414141] mb-5 text-3xl">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
                         <div>
                             <!-- rhombus dimension 1-->
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <!-- Pentagon card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-96 bg-base-100 shadow-xl" id="pentagon-div">
                     <figure class="mt-5"><img src="images/pentagon.png" alt="pentagon" /></figure>
                     <div class="card-body">
                         <h2 class="text-2xl font-bold text-[#414141] text-center mb-3">Pentagon</h2>
@@ -134,11 +134,11 @@
                     </div>
                 </div>
                 <!-- Ellipse card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-96 bg-base-100 shadow-xl" id="ellipse-div">
                     <figure class="mt-5"><img src="images/ellipse.png" alt="ellipse" /></figure>
                     <div class="card-body">
                         <h2 class="text-2xl font-bold text-[#414141] text-center mb-3">Ellipse</h2>
-                        <p class="text-center text-[#414141] mb-5 text-3xl">Area (A) = r X a X b</p>
+                        <p class="text-center text-[#414141] mb-5 text-3xl">Area (A) = π X a X b</p>
                         <div>
                             <!--ellipse a-->
                             <input id="ellipse-a" type="text" placeholder="a" class="w-24 p-2 rounded-sm bg-[#F1F1F1]" ><span class="ml-2 mr-4">cm</span>
@@ -155,19 +155,20 @@
                 </div>
             </div>
             <!-- Area calculation container -->
-            <div class="w-96  border-2 border-gray-700 rounded-md">
+            <div class="w-96  border-2 border-gray-700 rounded-md p-4">
                 <h3 class="text-3xl p-4  text-center">Area Calculation</h3>
+                <ol type="1" id="list-output" class="font-bold text-2xl list-decimal list-inside w-full"> </ol>
 
             </div>
         </div>
     </main>
 
     <!-- <script src="scripts/triangle-calculate.js"></script> -->
-    <script src="scripts/rectangle-area.js"></script>
-    <script src="scripts/parallelogram-area.js"></script>
-    <script src="scripts/rhombus-area.js"></script>
-    <script src="scripts/pentagon-area.js"></script>
-    <script src="scripts/ellipse-area.js"></script>
+    <!-- <script src="scripts/rectangle-area.js"></script> -->
+    <!-- <script src="scripts/parallelogram-area.js"></script> -->
+    <!-- <script src="scripts/rhombus-area.js"></script> -->
+    <!-- <script src="scripts/pentagon-area.js"></script> -->
+    <!-- <script src="scripts/ellipse-area.js"></script> -->
     <script src="scripts/script.js"></script>
 
 </body>
